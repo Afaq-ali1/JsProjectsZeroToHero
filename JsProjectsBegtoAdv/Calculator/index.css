@@ -1,0 +1,24 @@
+#display{
+  margin: 10px;
+  font-size: 20px;
+  width: 85%;
+}
+#calculator{
+  border-radius: 6px;
+  padding: 10px;
+  width: 200px;
+  border: 2px solid grey;
+}
+
+#btnContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2px;
+  padding: 15px;
+}
+.calButton{
+  height: 45px;
+  width: 45px;
+  margin: 3px;
+}
