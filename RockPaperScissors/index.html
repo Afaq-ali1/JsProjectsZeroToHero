@@ -1,79 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Rock Paper Scissor Game</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <h1>Choose one Rock ,Paper or Scissor</h1>
+  <h1>Rock Paper Scissor Game</h1>
   <button id="rock" onclick="
-  console.log('You choosed Rock');
-  let choice =Math.random()*3;
-  if(choice > 0 && choice < 1){
-      let systemChoice = 'Paper';
-      console.log(`system choosed ${systemChoice}`);
-      alert('you lost');
-    }
-    else if(choice >=1 && choice < 1.8)
+    let randomNum =Math.random()*3;
+      let systemChoice;
+    if(randomNum > 0 && randomNum < 1)
     {
-      let systemChoice = 'Rock';
-      console.log(`system choosed ${systemChoice}`);
-      alert('match is tie');
+       systemChoice = 'Paper';
+    }
+    else if(randomNum >=1 && randomNum < 1.8)
+    {
+       systemChoice = 'Rock';
     }
     else
     {
-      let systemChoice = 'Scissor';
-      console.log(`system choosed ${systemChoice}`);
-      alert('you won');
-
+       systemChoice = 'Scissor';
     }
+         let result;
+    if(systemChoice==='Paper')
+    {
+      result='System won';
+    }
+    else if(systemChoice==='Scissor')
+    {
+       result='User won';
+    } 
+    else
+    {
+        result=`It's tie`;
+    }
+        alert(`You choosed Rock, system choosed ${systemChoice} and ${result}`);
   ">Rock</button>
   <button id="paper" onclick="
-    console.log('You choosed Paper');
-   choice =Math.random()*3;
-  if(choice > 0 && choice < 1){
-      let systemChoice = 'Scissor';
-      console.log(`system choosed ${systemChoice}`);
-      alert('you lost');
-    }
-    else if(choice >=1 && choice < 1.8)
+      randomNum =Math.random()*3;
+    if(randomNum > 0 && randomNum < 1)
     {
-      let systemChoice = 'Paper';
-      console.log(`system choosed ${systemChoice}`);
-      alert('match is tie');
+       systemChoice = 'Paper';
+    }
+    else if(randomNum >=1 && randomNum < 1.8)
+    {
+       systemChoice = 'Rock';
     }
     else
     {
-      let systemChoice = 'Rock';
-      console.log(`system choosed ${systemChoice}`);
-      alert('you won');
+       systemChoice = 'Scissor';
     }
+    if(systemChoice==='Scissor')
+    {
+      result='System won';
+    }
+    else if(systemChoice==='Rock')
+    {
+       result='User won';
+    } 
+    else
+    {
+        result=`It's tie`;
+    }
+        alert(`You choosed Paper, system choosed ${systemChoice} and ${result}`);
   ">Paper</button>
   <button id="scissor" onclick="
-  console.log('You choosed Scissor');
-   choice =Math.random()*3;
-  if(choice > 0 && choice < 1){
-      let systemChoice = 'Rock';
-      console.log(`system choosed ${systemChoice}`);
-      alert('you lost');
-    }
-    else if(choice >=1 && choice < 1.8)
+      randomNum =Math.random()*3;
+    if(randomNum > 0 && randomNum < 1)
     {
-      let systemChoice = 'Scissor';
-      console.log(`system choosed ${systemChoice}`);
-      alert('match is tie');
+       systemChoice = 'Paper';
+    }
+    else if(randomNum >=1 && randomNum < 1.8)
+    {
+       systemChoice = 'Rock';
     }
     else
     {
-      let systemChoice = 'Paper';
-      console.log(`system choosed ${systemChoice}`);
-      alert('you won');
+       systemChoice = 'Scissor';
     }
-
+    if(systemChoice==='Rock')
+    {
+      result='System won';
+    }
+    else if(systemChoice==='Paper')
+    {
+       result='User won';
+    } 
+    else
+    {
+        result=`It's tie`;
+    }
+        alert(`You choosed Scissor, system choosed ${systemChoice} and ${result}`);
   ">Scissor</button>
-  <script>
 
-  </script>
 </body>
 </html>
