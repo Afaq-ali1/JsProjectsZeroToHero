@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Choose one Rock ,Paper or Scissor</h1>
+  <button id="rock" onclick="
+  console.log('You choosed Rock');
+  let choice =Math.random()*3;
+  if(choice > 0 && choice < 1){
+      let systemChoice = 'Paper';
+      console.log(`system choosed ${systemChoice}`);
+      alert('you lost');
+    }
+    else if(choice >=1 && choice < 1.8)
+    {
+      let systemChoice = 'Rock';
+      console.log(`system choosed ${systemChoice}`);
+      alert('match is tie');
+    }
+    else
+    {
+      let systemChoice = 'Scissor';
+      console.log(`system choosed ${systemChoice}`);
+      alert('you won');
+
+    }
+  ">Rock</button>
+  <button id="paper" onclick="
+    console.log('You choosed Paper');
+   choice =Math.random()*3;
+  if(choice > 0 && choice < 1){
+      let systemChoice = 'Scissor';
+      console.log(`system choosed ${systemChoice}`);
+      alert('you lost');
+    }
+    else if(choice >=1 && choice < 1.8)
+    {
+      let systemChoice = 'Paper';
+      console.log(`system choosed ${systemChoice}`);
+      alert('match is tie');
+    }
+    else
+    {
+      let systemChoice = 'Rock';
+      console.log(`system choosed ${systemChoice}`);
+      alert('you won');
+    }
+  ">Paper</button>
+  <button id="scissor" onclick="
+  console.log('You choosed Scissor');
+   choice =Math.random()*3;
+  if(choice > 0 && choice < 1){
+      let systemChoice = 'Rock';
+      console.log(`system choosed ${systemChoice}`);
+      alert('you lost');
+    }
+    else if(choice >=1 && choice < 1.8)
+    {
+      let systemChoice = 'Scissor';
+      console.log(`system choosed ${systemChoice}`);
+      alert('match is tie');
+    }
+    else
+    {
+      let systemChoice = 'Paper';
+      console.log(`system choosed ${systemChoice}`);
+      alert('you won');
+    }
+
+  ">Scissor</button>
+  <script>
+
+  </script>
+</body>
+</html>
