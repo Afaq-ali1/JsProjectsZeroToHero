@@ -2,96 +2,28 @@
 <html lang="en">
 <head>
   <title>Rock Paper Scissor Game</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body>
   <h1>Rock Paper Scissor Game</h1>
   <button id="rock" onclick="
-    let randomNum =Math.random()*3;
-      let systemChoice;
-    if(randomNum > 0 && randomNum < 1)
-    {
-       systemChoice = 'Paper';
-    }
-    else if(randomNum >=1 && randomNum < 1.8)
-    {
-       systemChoice = 'Rock';
-    }
-    else
-    {
-       systemChoice = 'Scissor';
-    }
-         let result;
-    if(systemChoice==='Paper')
-    {
-      result='System won';
-    }
-    else if(systemChoice==='Scissor')
-    {
-       result='User won';
-    } 
-    else
-    {
-        result=`It's tie`;
-    }
-        alert(`You choosed Rock, system choosed ${systemChoice} and ${result}`);
-  ">Rock</button>
+     let systemChoice= randomChoice();
+     let result=generateSystemChoice('rock',systemChoice);
+     display('rock',systemChoice,result);
+">Rock</button>
+
   <button id="paper" onclick="
-      randomNum =Math.random()*3;
-    if(randomNum > 0 && randomNum < 1)
-    {
-       systemChoice = 'Paper';
-    }
-    else if(randomNum >=1 && randomNum < 1.8)
-    {
-       systemChoice = 'Rock';
-    }
-    else
-    {
-       systemChoice = 'Scissor';
-    }
-    if(systemChoice==='Scissor')
-    {
-      result='System won';
-    }
-    else if(systemChoice==='Rock')
-    {
-       result='User won';
-    } 
-    else
-    {
-        result=`It's tie`;
-    }
-        alert(`You choosed Paper, system choosed ${systemChoice} and ${result}`);
+     systemChoice= randomChoice();
+     result=generateSystemChoice('paper',systemChoice);
+     display('paper',systemChoice,result);
   ">Paper</button>
+
   <button id="scissor" onclick="
-      randomNum =Math.random()*3;
-    if(randomNum > 0 && randomNum < 1)
-    {
-       systemChoice = 'Paper';
-    }
-    else if(randomNum >=1 && randomNum < 1.8)
-    {
-       systemChoice = 'Rock';
-    }
-    else
-    {
-       systemChoice = 'Scissor';
-    }
-    if(systemChoice==='Rock')
-    {
-      result='System won';
-    }
-    else if(systemChoice==='Paper')
-    {
-       result='User won';
-    } 
-    else
-    {
-        result=`It's tie`;
-    }
-        alert(`You choosed Scissor, system choosed ${systemChoice} and ${result}`);
+    systemChoice= randomChoice();
+    result=generateSystemChoice('scissor',systemChoice);
+    display('scissor',systemChoice,result);
   ">Scissor</button>
 
+  <script src="index.js"> </script>
 </body>
 </html>
