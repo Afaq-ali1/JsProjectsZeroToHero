@@ -5,25 +5,36 @@
   <link rel="stylesheet" href="index.css" />
 </head>
 <body>
-  <h1>Rock Paper Scissor Game</h1>
-  <button id="rock" onclick="
+  <h2>Rock Paper Scissor Game</h2>
+<div class="container">
+
+  <button id="rock" class="btn" onclick="
      let systemChoice= randomChoice();
      let result=generateSystemChoice('rock',systemChoice);
      display('rock',systemChoice,result);
-">Rock</button>
+  "></button>
 
-  <button id="paper" onclick="
+<button id="paper" class="btn" onclick="
      systemChoice= randomChoice();
      result=generateSystemChoice('paper',systemChoice);
      display('paper',systemChoice,result);
-  ">Paper</button>
+  "></button>
 
-  <button id="scissor" onclick="
+<button id="scissor" class="btn" onclick="
     systemChoice= randomChoice();
     result=generateSystemChoice('scissor',systemChoice);
     display('scissor',systemChoice,result);
-  ">Scissor</button>
-
+  "></button>
+  </div>
+  <div id="new"></div>
+<h4 id="userSection"></h4>
+<h4 id="systemSection"></h4>
+<h4 id="resultSection"></h4>
+<h4 id="finalSection"></h4>
+  <button id="reset" class="btn" onclick="
+  localStorage.clear()
+  resetScore(); 
+  ">New Player</button>
   <script src="index.js"> </script>
 </body>
 </html>
