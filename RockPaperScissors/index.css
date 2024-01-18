@@ -1,3 +1,35 @@
 html,body{
+  color: brown;
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
   text-align: center;
+}
+#rock
+{
+  background-image: url('rock.PNG');
+}
+#paper
+{
+  background-image: url('paper.PNG');}
+#scissor
+{
+    background-image: url('scissor.PNG');
+}
+.btn
+{
+  margin: 5px;
+  height: 70px;
+  width: 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  border-radius: 3px;
+  font-weight: 700;
+  cursor: pointer;
+  color: brown;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn:hover
+{
+  opacity: .7;
 }
