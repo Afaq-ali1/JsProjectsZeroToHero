@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Document</title>
 </head>
+
 <body>
   <h1>Todo App</h1>
   <input id="todo-input" type="text" placeholder="Enter todo list">
-  <button id="enterBtn" 
-  >Enter</button>
-  <div id="container1">
+  <input id="date-input" type="date">
+<button id="enterBtn" onclick="
+displayTodo();
+addTodo();
+">Enter</button>
+  <div id="container">
   </div>
 
   <script src="todo.js"></script>
 </body>
+
 </html>
