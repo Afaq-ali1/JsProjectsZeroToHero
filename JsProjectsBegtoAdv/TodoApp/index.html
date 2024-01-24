@@ -3,16 +3,19 @@
 
 <head>
   <title>Document</title>
+<link rel="stylesheet" href="todo.css">
 </head>
 
 <body>
   <h1>Todo App</h1>
-  <input id="todo-input" type="text" placeholder="Enter todo list">
-  <input id="date-input" type="date">
-<button id="enterBtn" onclick="
+  <div id="todo-container">
+    <input id="todo-input" type="text" placeholder="Enter todo list">
+    <input id="date-input" type="date">
+    <button id="enterBtn" onclick="
 displayTodo();
 addTodo();
 ">Enter</button>
+</div>
   <div id="container">
   </div>
 

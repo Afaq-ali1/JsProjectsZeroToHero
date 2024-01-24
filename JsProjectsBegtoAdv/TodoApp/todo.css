@@ -1,0 +1,15 @@
+
+#container{
+  display: grid;
+  margin-top: 10px;
+  grid-template-columns: 200px 150px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+#todo-container{
+  display: grid;
+  margin-top: 10px;
+  grid-template-columns: 200px 150px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+}

@@ -16,10 +16,10 @@ function displayTodo() {
   todoContainer.innerHTML = "";
   for (let i = 0; i < Arr.length; i++) {
     todoContainer.innerHTML += `
-    <div>
-    <span> ${i + 1}. ${Arr[i].item} ${Arr[i].date}</span> <button   onclick="Arr.splice(${i}, 1);
+    <span> ${i + 1}. ${Arr[i].item}</span>
+    <span> ${Arr[i].date}</span> <button   onclick="Arr.splice(${i}, 1);
     displayTodo();">delete</button>
-    </div>
+
     `;
   }
 }
