@@ -3,12 +3,12 @@ let todoDate = document.querySelector("#date-input");
 let todoContainer = document.querySelector("#container");
 let Arr = [
   {
-    item: "pahla",
-    date: "2024-1-22"
+    item: "first",
+    date: "2024-01-22"
   },
   {
-    item: "doosra",
-    date: "2024-1-22"
+    item: "sefond",
+    date: "2024-01-22"
   },
 ];
 displayTodo();
