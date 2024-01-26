@@ -7,7 +7,7 @@ let Arr = [
     date: "2024-01-22"
   },
   {
-    item: "sefond",
+    item: "second",
     date: "2024-01-22"
   },
 ];
@@ -29,4 +29,5 @@ function addTodo() {
    date: todoDate.value};
   Arr.push(todoAdd);
   displayTodo();
+  
 }
