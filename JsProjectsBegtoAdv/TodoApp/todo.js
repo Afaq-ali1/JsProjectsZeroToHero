@@ -15,6 +15,9 @@ displayTodo();
 function displayTodo() {
   todoContainer.innerHTML = "";
   for (let i = 0; i < Arr.length; i++) {
+    // let item=Arr[i].item;
+    // let date=Arr[i].date;
+    let {item,date}=arr[i];
     todoContainer.innerHTML += `
     <span> ${i + 1}. ${Arr[i].item}</span>
     <span> ${Arr[i].date}</span> <button   onclick="Arr.splice(${i}, 1);
