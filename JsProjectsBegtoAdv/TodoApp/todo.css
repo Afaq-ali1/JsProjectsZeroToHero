@@ -13,3 +13,8 @@
   column-gap: 10px;
   row-gap: 10px;
 }
+#date-input ,#todo-input
+{
+  font-size: 15px;
+  padding: 10px 5px;
+}
