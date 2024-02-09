@@ -1,6 +1,7 @@
 let todoInput = document.querySelector("#todo-input");
 let todoDate = document.querySelector("#date-input");
 let todoContainer = document.querySelector("#container");
+let enterButton=document.querySelector('#enterBtn')
 let Arr = [
   {
     item: "first",
@@ -30,3 +31,10 @@ function addTodo() {
   Arr.push(todoAdd);
   displayTodo();
 }
+
+enterButton.addEventListener("click",()=>
+{
+  displayTodo();
+  addTodo();
+});
+  
